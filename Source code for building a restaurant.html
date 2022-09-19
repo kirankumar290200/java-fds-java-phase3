@@ -1,0 +1,264 @@
+Source code for building a restaurant website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ming's Diner</title>
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet" integrity="sha384-
+EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous">
+<style>
+@media all and (min-width:1240px)
+{
+.caro-height
+{
+height: 100vh;
+}
+}
+.foo-col
+{
+background-color: black;
+}
+.btn-txt
+{
+color: white!important;
+}
+.btn-txt:hover
+{
+color: #000!important;
+}
+</style>
+</head>
+<body data-spy="scroll" target=".navbar">
+<!--nav bar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid ">
+<!--Brand-->
+<a class="navbar-brand" href="#">
+<!--Brand image-->
+<img src="images/logo/logo.jpg" alt="" width="30" height="24">
+<!--Brand name-->
+Ming's Diner</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" ariaexpanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<!--Nav Menu bar-->
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav g-2 me-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#"
+id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" ariaexpanded="false">
+Home
+</a>
+<ul class="dropdown-menu" arialabelledby="navbarDropdownMenuLink">
+<li><a class="dropdown-item" href="#">Menu Card</a></li>
+<li><a class="dropdown-item" href="#">Best Sellers</a></li>
+<li><a class="dropdown-item" href="#">Today's Special</a></li>
+</ul>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">About us</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+<span class="navbar-text d-block">
+<a class="btn btn-txt d-block btn-outline-light" href="form.html"
+target="_blank" role="button">Contact us</a>
+</span>
+</div>
+</div>
+</nav>
+<!--Image corousal-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bsride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" databs-slide-to="0" class="active" aria-current="true" aria-label="Slide
+1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" databs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" databs-slide-to="2" aria-label="Slide 3"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" databs-slide-to="3" aria-label="Slide 4"></button>
+</div>
+<div class="carousel-inner caro-height">
+<div class="carousel-item active">
+<img src="images/img-1.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+<img src="images/img-2.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+<img src="images/img-3.jpg" class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+<img src="images/img-4.jpg" class="d-block w-100" alt="...">
+</div>
+</div>
+</div>
+<!--Best SellerCards-->
+<div class="container">
+<p class="h4 mt-5 mb-0">Best Sellers</p>
+<div class="container mt-4 px-4">
+<div class="row g-5">
+<div class="col-lg-3 col-md-6">
+<div class="card text-center">
+<img src="images/card-images/pizza.jpg" class="card-img-top"
+alt="...">
+<div class="card-body">
+<h5 class="card-title">Pizza</h5>
+<p class="card-text"> <b>Price:</b> 299 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning">Add
+to Cart</button>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="card text-center">
+<img src="images/card-images/fish-fingers.jpg" class="card-imgtop" alt="...">
+<div class="card-body">
+<h5 class="card-title">Fish fingers</h5>
+<p class="card-text"> <b>Price:</b> 179 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning">Add
+to Cart</button>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="card text-center">
+<img src="images/card-images/sandwich.jpg" class="card-img-top"
+alt="...">
+<div class="card-body">
+<h5 class="card-title">Chicken Sandwich</h5>
+<p class="card-text"> <b>Price:</b> 249 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning">Add
+to Cart</button>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<div class="card text-center">
+<img src="images/card-images/chicken-burger.jpg" class="card-imgtop" alt="...">
+<div class="card-body">
+<h5 class="card-title">Chicken Burger Mini</h5>
+<p class="card-text"> <b>Price:</b> 99 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning">Add
+to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Today's Special cards-->
+<div class="container mb-3">
+<br>
+<p class="h4 mt-5 mb-0">Today's Special</p>
+<div class="container mt-4 px-4">
+<div class="row g-5">
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="card text-center">
+<img src="images/card-images/pizza.jpg" class="card-img-top"
+alt="...">
+<div class="card-body">
+<h5 class="card-title">Pizza</h5>
+<p class="card-text"> <b>Price:</b> 299 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning ">Add
+to Cart</button>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6">
+<div class="card text-center">
+<img src="images/card-images/chicken-shawarma.jpg" class="cardimg-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Chicken Shawarma</h5>
+<p class="card-text"> <b>Price:</b> 149 INR </p>
+<a href="#" class="btn mt-2 btn-success">Order</a>
+<button type="button" class="btn mt-2 btn-outline-warning">Add
+to Cart</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Footer-->
+<footer class="bg-dark text-center text-lg-start text-white">
+<div class="container p-4">
+<div class="row">
+<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+<h5 class="text-uppercase">Follow us on</h5>
+<div class="container p-4 pb-0">
+<!-- Section: Social media -->
+<section class="mb-4">
+<!-- Google -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-google"></i
+></a>
+<!-- YouTube -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-youtube"></i
+></a>
+<!-- Yahoo -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-yahoo"></i
+></a>
+<!-- Twitter -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-twitter"></i>
+</a>
+<!-- Instagram -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-instagram"></i
+></a>
+<!-- Facebook -->
+<a class="btn btn-outline-light btn-floating m-1" href="#!"
+role="button"
+><i class="fab fa-facebook"></i
+></a>
+</section>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+<h5 class="text-uppercase">Address</h5>
+<!--Address-->
+<p>
+<Address>
+416, Jubilee Road, Main Bajar,
+Ameerpet,<br>
+Telangana, India - 520013<br>
+PHONE NUMBER: +918072444666 <br>
+MAIL ID: MingsDiner@gmail.com</Address>
+</p>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0,
+0.2);">
+Copyright © 2022 Developed by : Lokesh Rayala
+</div>
+</footer>
+<script src="https://kit.fontawesome.com/f46690da59.js"
+crossorigin="anonymous"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min
+.js" integrity="sha384-
+MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+</body>
+</html>
